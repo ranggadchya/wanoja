@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/style.css" />
+    <title>Wanoja Hijab</title>
+  </head>
+  <body>
+    <!-- Header Start -->
+    <header
+      class="absolute top-0 left-0 z-10 flex flex-col flex-wrap w-full items-center bg-transparent"
+    >
+      <div class="container py-3">
+        <div class="relative flex items-center justify-between">
+          <div class="w-32">
+            <img src="/img/logo.png" alt="" />
+          </div>
+
+          <!-- Hamburger Start -->
+          <div class="flex items-center justify-center">
+            <button
+              id="hamburger"
+              name="hamburger"
+              type="button"
+              class="absolute flex flex-col right-4 lg:hidden px-3 py-2 justify-end rounded-md overflow-hidden shadow-md"
+            >
+              <span class="hamburger origin-top-right"></span>
+              <span class="hamburger"></span>
+              <span class="hamburger"></span>
+            </button>
+          </div>
+          <!-- Hamburger End -->
+        </div>
+      </div>
+
+      <!-- Navbar Start -->
+      <nav
+        class="bg-secondary h-full w-full hidden lg:static lg:flex transition-all duration-300 ease-in-out"
+        id="nav-menu"
+      >
+        <div class="container">
+          <ul class="block py-3 lg:flex">
+            <li class="group">
+              <a href="#" class="nav-link active">Home</a>
+            </li>
+            <li class="group">
+              <a href="#" class="nav-link">Mitra</a>
+            </li>
+            <li class="group">
+              <a href="#" class="nav-link">Katalog</a>
+            </li>
+            <li class="block lg:hidden">
+              <div class="flex flex-col py-2 px-3">
+                <span
+                  class="flex justify-center h-[2px] bg-accent rounded-full"
+                ></span>
+              </div>
+            </li>
+            <li class="group">
+              <a href="#" class="nav-link-user active">Login</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <!-- Navbar End -->
+    </header>
+    <!-- Header End -->
+
+    <!-- Footer Start -->
+    <!-- Footer End -->
+
+    <!-- Script Icons -->
+    <script src="/src/js/script.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>

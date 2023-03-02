@@ -3,17 +3,31 @@ module.exports = {
   content: ["*.html", "./pages/*.html"],
   theme: {
     container: {
-      padding: '100px',
-      true: center, 
+      center: true,
+      padding: "16px",
     },
     fontFamily: {
-      poppins: 'Poppins',
+      poppins: "Poppins",
     },
     extend: {
+      fontSize: {
+        xxs: [
+          "10px",
+          {
+            lineHeight: "12px",
+          },
+        ],
+      },
       colors: {
         primary: "#FFFFFF",
         secondary: "#06283D",
         accent: "#256D85",
+      },
+      gridTemplateColumns: {
+        footer: "150px minmax(0, 1fr)",
+      },
+      screens: {
+        "2xl": "1320px",
       },
     },
   },
