@@ -21,7 +21,7 @@ input {
 }
 
 .hamburger {
-  @apply my-0.5 block h-[2px] w-6 bg-secondary transition-all duration-500 ease-in-out;
+  @apply my-0.5 block h-[2px] w-6 bg-secondary transition-all duration-500 ease-in-out rounded-full;
 }
 
 .hamburger-active > span:nth-child(1) {
@@ -38,7 +38,7 @@ input {
 
 /* Navbar */
 .nav-link {
-  @apply flex text-primary/70 text-sm font-semibold p-3 my-4 rounded-md hover:bg-primary hover:text-secondary transition duration-500 ease-in-out;
+  @apply flex text-primary/70 text-sm font-semibold p-3 my-4 mx-2 rounded-md hover:bg-primary hover:text-secondary transition duration-500 ease-in-out;
 }
 
 .nav-link.active,
