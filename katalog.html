@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="src/style.css" />
+
+    <title>Wanoja Hijab | Katalog</title>
+  </head>
+  <body>
+    <!-- Header Start -->
+    <header
+      class="absolute top-0 left-0 z-10 flex flex-col flex-wrap w-full items-center bg-transparent"
+    >
+      <div class="container py-3">
+        <div class="relative flex items-center justify-between">
+          <div class="w-32">
+            <img src="img/logo.png" alt="" />
+          </div>
+
+          <!-- Hamburger Start -->
+          <div class="flex items-center justify-center">
+            <button
+              id="hamburger"
+              name="hamburger"
+              type="button"
+              class="absolute flex flex-col right-4 lg:hidden px-3 py-2 justify-end rounded-md overflow-hidden shadow-md"
+            >
+              <span class="hamburger origin-top-right"></span>
+              <span class="hamburger"></span>
+              <span class="hamburger"></span>
+            </button>
+          </div>
+          <!-- Hamburger End -->
+        </div>
+      </div>
+
+      <!-- Navbar Start -->
+      <nav
+        class="bg-secondary h-full w-full hidden lg:static lg:flex transition-all duration-300 ease-in-out shadow-md"
+        id="nav-menu"
+      >
+        <div class="container">
+          <ul class="block py-3 lg:flex">
+            <li class="group">
+              <a href="#" class="nav-link active">Home</a>
+            </li>
+            <li class="group">
+              <a href="#" class="nav-link">Mitra</a>
+            </li>
+            <li class="group">
+              <a href="#" class="nav-link">Katalog</a>
+            </li>
+            <li class="block lg:hidden">
+              <div class="flex flex-col py-2 px-3">
+                <span
+                  class="flex justify-center h-[2px] bg-accent rounded-full"
+                ></span>
+              </div>
+            </li>
+            <li class="group">
+              <a href="#" class="nav-link-user active">Login</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <!-- Navbar End -->
+    </header>
+    <!-- Header End -->
+
+    <!-- Heading Start -->
+    <section class="pt-24 pb-8">
+      <div class="container">
+        <!-- Title | Semua Produk Start -->
+        <div class="flex items-center justify-between px-4">
+          <!-- Title -->
+          <div class="py-1">
+            <h1 class="uppercase text-lg text-secondary font-semibold">
+              Katalog
+            </h1>
+          </div>
+
+          <!-- Semua Produk -->
+          <div class="flex items-center gap-2 text-xs font-medium">
+            <a
+              href="#"
+              class="text-primary/70 bg-secondary border-2 border-secondary py-1 px-4 rounded-full hover:bg-primary hover:text-secondary transition duration-300 ease-in-out"
+            >
+              Semua Produk
+            </a>
+            <a
+              href="#"
+              class="text-primary/70 bg-accent border-2 border-accent py-1 px-4 rounded-full hover:bg-primary hover:text-accent transition duration-300 ease-in-out"
+            >
+              Info Stock
+            </a>
+          </div>
+        </div>
+        <!-- Title | Semua Produk End -->
+
+        <!-- Search Data Start -->
+        <div class="px-4 py-3 flex items-center w-full">
+          <!-- Search Data -->
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Cari Katalog ..."
+          />
+        </div>
+        <!-- Search Data End -->
+
+        <!-- Katalog Card Start -->
+        <div class="container py-2">
+          <div class="flex flex-wrap">
+            <!-- Product Pertama -->
+            <div class="card">
+              <div class="card-product">
+                <img src="img/Bergo Aquila.jpg" alt="" />
+                <div class="py-2 px-3">
+                  <h1 class="title-product">Bergo Aquila</h1>
+                  <div class="flex items-center justify-between py-2">
+                    <span class="price">Rp. 79.000</span>
+                    <a href="#" class="link-information">
+                      <ion-icon name="information"></ion-icon>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Product Kedua -->
+            <div class="card">
+              <div class="card-product">
+                <img src="img/Niltava Dress.jpg" alt="" />
+                <div class="py-2 px-3">
+                  <h1 class="title-product">Niltava Dress</h1>
+                  <div class="flex items-center justify-between py-2">
+                    <span class="price">Rp. 450.000</span>
+                    <a href="#" class="link-information">
+                      <ion-icon name="information"></ion-icon>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Product Ketiga -->
+            <div class="card">
+              <div class="card-product">
+                <img src="img/Coat Ardeloa.jpg" alt="" />
+                <div class="py-2 px-3">
+                  <h1 class="title-product">Coat Ardeloa</h1>
+                  <div class="flex items-center justify-between py-2">
+                    <span class="price">Rp. 540.000</span>
+                    <a href="#" class="link-information">
+                      <ion-icon name="information"></ion-icon>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Product Keempat -->
+            <div class="card">
+              <div class="card-product">
+                <img src="img/Outer Parotia.jpg" alt="" />
+                <div class="py-2 px-3">
+                  <h1 class="title-product">Out Parotia</h1>
+                  <div class="flex items-center justify-between py-2">
+                    <span class="price">Rp. 259.000</span>
+                    <a href="#" class="link-information">
+                      <ion-icon name="information"></ion-icon>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Product Kelima -->
+            <div class="card">
+              <div class="card-product">
+                <img src="img/Plain Local Luxury.jpg" alt="" />
+                <div class="py-2 px-3">
+                  <h1 class="title-product">Plain Local Luxury</h1>
+                  <div class="flex items-center justify-between py-2">
+                    <span class="price">Rp. 69.000</span>
+                    <a href="#" class="link-information">
+                      <ion-icon name="information"></ion-icon>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Product Keenam -->
+            <div class="card">
+              <div class="card-product">
+                <img src="img/Rosho.jpg" alt="" />
+                <div class="py-2 px-3">
+                  <h1 class="title-product">Rosho</h1>
+                  <div class="flex items-center justify-between py-2">
+                    <span class="price">Rp. 119.000</span>
+                    <a href="#" class="link-information">
+                      <ion-icon name="information"></ion-icon>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Pagination Start -->
+            <div class="flex items-center gap-2 px-4 py-2">
+              <a href="#" class="link-pagination">
+                <ion-icon name="chevron-back-circle-outline"></ion-icon>
+              </a>
+              <a href="#" class="link-pagination active">1</a>
+              <a href="#" class="link-pagination">2</a>
+              <a href="#" class="link-pagination">...</a>
+              <a href="#" class="link-pagination">
+                <ion-icon name="chevron-forward-circle-outline"></ion-icon>
+              </a>
+            </div>
+            <!-- Pagination End -->
+          </div>
+        </div>
+        <!-- Katalog Card End -->
+      </div>
+    </section>
+    <!-- Heading End -->
+
+    <!-- Footer Start -->
+    <div
+      class="bottom-0 py-2 gap-1 bg-secondary text-primary/40 text-xs font-medium flex items-center justify-center uppercase"
+    >
+      <span>&#169;</span>
+      <span>wanoja it support | kafa bilahi syahida</span>
+    </div>
+    <!-- Footer End -->
+
+    <!-- Script Icons -->
+    <script src="src/js/script.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>

@@ -14,6 +14,10 @@ input {
   border-radius: none;
 }
 
+.card {
+  @apply w-1/2 md:w-1/3 px-4 py-3;
+}
+
 /* Home Start */
 .navbar-fixed {
   @apply fixed z-[9999] bg-white/70 backdrop-blur-sm;
@@ -72,4 +76,58 @@ input {
   @apply text-sm hover:text-primary/70 transition duration-300 ease-in-out;
 }
 
-/* Home End */ ;
+/* Home End */
+
+/* Mitra Start */
+.form-control {
+  @apply flex w-full border-2 rounded-md text-xs bg-secondary py-2 px-4 focus:caret-primary/70 text-primary/70 placeholder:text-primary/50 focus:bg-accent transition duration-300 ease-in-out;
+}
+
+.card-mitra {
+  @apply flex flex-col bg-primary shadow-md rounded-md px-4 py-2 text-secondary text-center;
+}
+
+.nama-mitra {
+  @apply font-semibold text-secondary text-lg;
+}
+
+.daerah-mitra {
+  @apply text-sm text-accent mb-1.5;
+}
+
+.icon-mitra {
+  @apply text-sm hover:text-accent transition duration-300 ease-in-out;
+}
+
+.link-pagination {
+  @apply text-base text-secondary flex items-center;
+}
+
+.link-pagination.active {
+  @apply text-base text-accent flex items-center;
+}
+
+/* Mitra End */
+
+/* Katalog Start */
+.card-product {
+  @apply bg-primary shadow-md rounded-lg overflow-hidden;
+}
+
+.title-product {
+  @apply font-semibold uppercase text-secondary text-sm;
+}
+
+.star {
+  @apply flex items-center text-accent text-sm gap-1 mb-1;
+}
+
+.price {
+  @apply flex text-secondary text-sm;
+}
+
+.link-information {
+  @apply flex items-center bg-accent text-primary border border-primary p-1 rounded-full text-sm hover:bg-primary hover:text-accent hover:border-accent transition duration-300 ease-in-out;
+}
+
+/* Katalog End */
