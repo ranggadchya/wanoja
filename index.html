@@ -11,7 +11,7 @@
   <body>
     <!-- Header Start -->
     <header
-      class="absolute top-0 left-0 z-10 flex flex-col flex-wrap w-full items-center bg-transparent"
+      class="absolute top-0 left-0 z-10 flex flex-col flex-wrap w-full items-center bg-transparent lg:px-24"
     >
       <div class="container py-3">
         <div class="relative flex items-center justify-between">
@@ -25,7 +25,7 @@
               id="hamburger"
               name="hamburger"
               type="button"
-              class="absolute flex flex-col right-4 px-3 py-2 justify-end rounded-md overflow-hidden shadow-md"
+              class="absolute flex lg:hidden flex-col right-4 px-3 py-2 justify-end rounded-md overflow-hidden shadow-md"
             >
               <span class="hamburger origin-top-right"></span>
               <span class="hamburger"></span>
@@ -33,6 +33,38 @@
             </button>
           </div>
           <!-- Hamburger End -->
+
+          <!-- Navbar Desktop Start -->
+          <nav class="bg-transparent hidden lg:flex">
+            <div class="container">
+              <ul class="flex gap-5">
+                <li>
+                  <a href="#" class="nav-link-desktop">
+                    <span>Home</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="nav-link-desktop">
+                    <span>Mitra</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="nav-link-desktop">
+                    <span>Katalog</span>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="text-primary/70 font-semibold px-4 py-2 bg-secondary border-2 border-secondary rounded-md hover:bg-transparent hover:text-secondary transition duration-300 ease-in-out"
+                  >
+                    Login
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+          <!-- Navbar Desktop End -->
         </div>
       </div>
 
@@ -71,7 +103,7 @@
 
     <!-- Slider Section Start -->
     <section class="pt-24 pb-8">
-      <div class="container overflow-x-hidden">
+      <div class="container lg:px-24 overflow-x-hidden">
         <div class="swiper mySwiper-banner flex w-full px-4 overflow-x-hidden">
           <div class="swiper-wrapper flex">
             <div class="swiper-slide flex w-full rounded-lg overflow-hidden">
@@ -90,8 +122,8 @@
     <!-- Slider Section End -->
 
     <!-- Divider Start -->
-    <section class="py-1">
-      <div class="container flex justify-center">
+    <section class="py-1 lg:py-4">
+      <div class="container lg:px-24 flex justify-center">
         <span class="divider"></span>
       </div>
     </section>
@@ -99,9 +131,11 @@
 
     <!-- New Products Start -->
     <section class="py-8">
-      <div class="container">
+      <div class="container lg:px-24">
         <div class="w-full px-4">
-          <h1 class="uppercase text-secondary font-bold">produk terbaru</h1>
+          <h1 class="uppercase text-secondary font-bold lg:text-xl">
+            produk terbaru
+          </h1>
         </div>
         <div class="container overflow-x-hidden">
           <div class="swiper mySwiper flex py-3">
@@ -326,7 +360,7 @@
               <div
                 class="swiper-slide flex flex-col items-center justify-center bg-primary backdrop-blur-sm rounded-lg shadow-md"
               >
-                <span class="text-sm font-semibold text-secondary my-2">
+                <span class="text-xs font-semibold text-secondary my-2">
                   Tampilkan Semua Produk
                 </span>
                 <a
@@ -344,8 +378,8 @@
     <!-- New Products End -->
 
     <!-- Divider Start -->
-    <section class="py-1">
-      <div class="container flex justify-center">
+    <section class="py-1 lg:py-4">
+      <div class="container lg:px-24 flex justify-center">
         <span class="divider"></span>
       </div>
     </section>
@@ -353,9 +387,11 @@
 
     <!-- Best Seller Start -->
     <section class="py-8">
-      <div class="container">
+      <div class="container lg:px-24">
         <div class="w-full px-4">
-          <h1 class="uppercase text-secondary font-bold">produk terlaris</h1>
+          <h1 class="uppercase text-secondary font-bold lg:text-xl">
+            produk terlaris
+          </h1>
         </div>
         <div class="container overflow-x-hidden">
           <div class="swiper mySwiper flex py-3">
@@ -598,7 +634,7 @@
     <!-- Best Seller End -->
 
     <!-- Divider Start -->
-    <section class="py-1">
+    <section class="py-1 lg:py-4">
       <div class="container flex justify-center">
         <span class="divider"></span>
       </div>
@@ -607,9 +643,11 @@
 
     <!-- Kemitraan Start -->
     <section class="py-8">
-      <div class="container">
+      <div class="container lg:px-24">
         <div class="w-full px-4">
-          <h1 class="font-bold text-secondary uppercase">kemitraan</h1>
+          <h1 class="font-bold text-secondary uppercase lg:text-xl">
+            kemitraan
+          </h1>
         </div>
 
         <div class="container overflow-x-hidden">
@@ -707,46 +745,51 @@
 
     <!-- Footer Start -->
     <footer class="bg-secondary text-primary py-6">
-      <div class="container">
+      <div class="container lg:px-24">
         <div class="px-4 mb-3">
-          <h1 class="font-semibold uppercase">Hubungi Kami</h1>
+          <h1 class="font-semibold uppercase lg:text-xl">Hubungi Kami</h1>
         </div>
 
-        <div class="flex flex-col w-full px-4 gap-2 text-accent">
-          <div class="flex gap-1.5">
-            <ion-icon name="locate-outline"></ion-icon>
-            <a href="#" class="link-footer"
-              >Jalan Transyogi No.45, Kelurahan Sirnasari, Kecamatan Tanjungsari
-              <br />
-              Kabupaten Bogor, Jawa Barat. 16840</a
-            >
-          </div>
-          <div class="flex items-center gap-1.5">
-            <ion-icon name="call-outline"></ion-icon>
-            <a href="#" class="link-footer">+62 857 2228 9656</a>
-          </div>
-          <div class="flex items-center gap-1.5">
-            <ion-icon name="mail-outline"></ion-icon>
-            <a href="#" class="link-footer">wanojahijab@gmail.com</a>
+        <div
+          class="flex flex-col lg:flex-row lg:justify-between w-full px-4 gap-2 text-accent"
+        >
+          <div class="lg:flex lg:flex-col lg:gap-y-2">
+            <div class="flex gap-1.5">
+              <ion-icon name="locate-outline"></ion-icon>
+              <a href="#" class="link-footer"
+                >Jalan Transyogi No.45, Kelurahan Sirnasari, Kecamatan
+                Tanjungsari
+                <br />
+                Kabupaten Bogor, Jawa Barat. 16840</a
+              >
+            </div>
+            <div class="flex items-center gap-1.5">
+              <ion-icon name="call-outline"></ion-icon>
+              <a href="#" class="link-footer">+62 857 2228 9656</a>
+            </div>
+            <div class="flex items-center gap-1.5">
+              <ion-icon name="mail-outline"></ion-icon>
+              <a href="#" class="link-footer">wanojahijab@gmail.com</a>
+            </div>
           </div>
 
           <!-- Sosial Media | Tautan | Bantuan -->
-          <div class="flex items-start gap-8">
+          <div class="flex items-start gap-8 lg:gap-10">
             <!-- Tautan -->
-            <div class="my-2">
+            <div class="my-2 lg:my-0">
               <h1 class="footer-title">tautan</h1>
-              <div class="flex flex-col gap-1">
-                <a href="#" class="footer-tautan text-sm">Home</a>
-                <a href="#" class="footer-tautan text-sm">Mitra</a>
-                <a href="#" class="footer-tautan text-sm">Katalog</a>
-                <a href="#" class="footer-tautan text-sm">Login</a>
+              <div class="flex flex-col lg:flex-row lg:gap-4 gap-1">
+                <a href="index.html" class="footer-tautan">Home</a>
+                <a href="mitra.html" class="footer-tautan text-sm">Mitra</a>
+                <a href="katalog.html" class="footer-tautan text-sm">Katalog</a>
+                <a href="login.html" class="footer-tautan text-sm">Login</a>
               </div>
             </div>
 
             <!-- Sosial Media -->
-            <div class="my-2">
+            <div class="my-2 lg:my-0">
               <h1 class="footer-title">Sosial Media</h1>
-              <div class="flex items-center gap-3">
+              <div class="flex items-center gap-3 lg:gap-4">
                 <a href="#" class="icon-footer"
                   ><ion-icon name="paper-plane-outline"></ion-icon
                 ></a>
@@ -760,7 +803,7 @@
             </div>
 
             <!-- Bantuan -->
-            <div class="my-2">
+            <div class="my-2 lg:my-0">
               <h1 class="footer-title">Bantuan</h1>
               <a href="#" class="footer-tautan">+62 857 2228 9656</a>
             </div>

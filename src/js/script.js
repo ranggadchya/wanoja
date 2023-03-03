@@ -36,7 +36,17 @@ window.addEventListener("click", function (e) {
 // Slider Script
 var swiper = new Swiper(".mySwiper", {
   slidesPerView: 2,
-  spaceBetween: 30,
+  spaceBetween: 25,
+  breakpoints: {
+    640: {
+      slidesPerView: 3,
+      spaceBetween: 30,
+    },
+    1024: {
+      slidesPerView: 4,
+      spaceBetween: 40,
+    },
+  },
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
@@ -45,6 +55,7 @@ var swiper = new Swiper(".mySwiper", {
 
 // Slider Banner Product
 var swiperBanner = new Swiper(".mySwiper-banner", {
+  speed: 1000,
   spaceBetween: 30,
   centeredSlides: true,
   autoplay: {

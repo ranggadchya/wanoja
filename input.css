@@ -56,7 +56,7 @@ input {
 
 /* Divider */
 .divider {
-  @apply h-[2px] rounded-full w-11/12 bg-accent;
+  @apply h-[2px] rounded-full w-11/12 lg:w-1/2 bg-accent;
 }
 
 /* Footer */
@@ -131,3 +131,9 @@ input {
 }
 
 /* Katalog End */
+
+/* Desktop Start */
+.nav-link-desktop {
+  @apply text-secondary font-semibold px-4 py-2 hover:text-accent transition duration-300 ease-in-out;
+}
+/* Desktop End */
