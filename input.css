@@ -79,8 +79,8 @@ input {
 /* Home End */
 
 /* Mitra Start */
-.form-control {
-  @apply flex w-full lg:w-1/4 border-2 rounded-md text-xs lg:text-sm bg-secondary py-2 px-4 focus:caret-primary/70 text-primary/70 placeholder:text-primary/50 focus:bg-accent transition duration-300 ease-in-out;
+.form-control-mitra {
+  @apply flex w-full border-2 rounded-md text-xs lg:text-sm bg-secondary py-2 px-4 focus:caret-primary/70 text-primary/70 placeholder:text-primary/50 focus:bg-accent transition duration-300 ease-in-out;
 }
 
 .card-mitra {
@@ -92,11 +92,11 @@ input {
 }
 
 .daerah-mitra {
-  @apply text-sm text-accent mb-1.5;
+  @apply text-sm text-accent mb-1.5 lg:text-base;
 }
 
 .icon-mitra {
-  @apply text-sm hover:text-accent transition duration-300 ease-in-out;
+  @apply text-sm hover:text-accent transition duration-300 ease-in-out lg:text-base;
 }
 
 .link-pagination {
@@ -114,6 +114,10 @@ input {
 /* Mitra End */
 
 /* Katalog Start */
+.form-control {
+  @apply flex w-full lg:w-1/4 border-2 rounded-md text-xs lg:text-sm bg-secondary py-2 px-4 focus:caret-primary/70 text-primary/70 placeholder:text-primary/50 focus:bg-accent transition duration-300 ease-in-out;
+}
+
 .card-product {
   @apply bg-primary shadow-md rounded-lg overflow-hidden;
 }
