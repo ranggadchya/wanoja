@@ -1374,20 +1374,24 @@ input {
     flex-direction: column;
   }
 
-  .lg\:items-start {
-    align-items: flex-start;
-  }
-
   .lg\:justify-between {
     justify-content: space-between;
+  }
+
+  .lg\:gap-10 {
+    gap: 2.5rem;
   }
 
   .lg\:gap-4 {
     gap: 1rem;
   }
 
-  .lg\:gap-10 {
-    gap: 2.5rem;
+  .lg\:gap-9 {
+    gap: 2.25rem;
+  }
+
+  .lg\:gap-8 {
+    gap: 2rem;
   }
 
   .lg\:gap-y-2 {
@@ -1402,6 +1406,11 @@ input {
   .lg\:py-4 {
     padding-top: 1rem;
     padding-bottom: 1rem;
+  }
+
+  .lg\:text-base {
+    font-size: 1rem;
+    line-height: 1.5rem;
   }
 
   .lg\:text-xl {
