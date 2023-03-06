@@ -105,12 +105,14 @@
 
     <!-- Heading Start -->
     <section class="pt-24 pb-8">
-      <div class="container">
+      <div class="container lg:px-24">
         <!-- Title | Semua Produk Start -->
         <div class="flex items-center justify-between px-4">
           <!-- Title -->
           <div class="py-1">
-            <h1 class="uppercase text-lg text-secondary font-semibold">
+            <h1
+              class="uppercase text-lg lg:text-xl lg:text-bold text-secondary font-semibold"
+            >
               Katalog
             </h1>
           </div>
@@ -119,13 +121,13 @@
           <div class="flex items-center gap-2 text-xs font-medium">
             <a
               href="#"
-              class="text-primary/70 bg-secondary border-2 border-secondary py-1 px-4 rounded-full hover:bg-primary hover:text-secondary transition duration-300 ease-in-out"
+              class="text-primary/70 bg-secondary border-2 border-secondary py-1 px-4 lg:py-1.5 lg:text-sm rounded-full hover:bg-primary hover:text-secondary transition duration-300 ease-in-out"
             >
               Semua Produk
             </a>
             <a
               href="#"
-              class="text-primary/70 bg-accent border-2 border-accent py-1 px-4 rounded-full hover:bg-primary hover:text-accent transition duration-300 ease-in-out"
+              class="text-primary/70 bg-accent border-2 border-accent py-1 px-4 lg:py-1.5 lg:text-sm rounded-full hover:bg-primary hover:text-accent transition duration-300 ease-in-out"
             >
               Info Stock
             </a>
@@ -134,7 +136,7 @@
         <!-- Title | Semua Produk End -->
 
         <!-- Search Data Start -->
-        <div class="px-4 py-3 flex items-center w-full">
+        <div class="container px-4 py-3 flex items-center w-full">
           <!-- Search Data -->
           <input
             type="text"
@@ -149,11 +151,11 @@
           <div class="flex flex-wrap">
             <!-- Product Pertama -->
             <div class="card">
-              <div class="card-product">
+              <div class="bg-primary shadow-md rounded-lg overflow-hidden">
                 <img src="img/Bergo Aquila.jpg" alt="" />
-                <div class="py-2 px-3">
+                <div class="py-2 px-3 lg:px-4">
                   <h1 class="title-product">Bergo Aquila</h1>
-                  <div class="flex items-center justify-between py-2">
+                  <div class="flex items-center justify-between py-1">
                     <span class="price">Rp. 79.000</span>
                     <a href="#" class="link-information">
                       <ion-icon name="information"></ion-icon>
@@ -169,7 +171,7 @@
                 <img src="img/Niltava Dress.jpg" alt="" />
                 <div class="py-2 px-3">
                   <h1 class="title-product">Niltava Dress</h1>
-                  <div class="flex items-center justify-between py-2">
+                  <div class="flex items-center justify-between py-1">
                     <span class="price">Rp. 450.000</span>
                     <a href="#" class="link-information">
                       <ion-icon name="information"></ion-icon>
@@ -185,9 +187,12 @@
                 <img src="img/Coat Ardeloa.jpg" alt="" />
                 <div class="py-2 px-3">
                   <h1 class="title-product">Coat Ardeloa</h1>
-                  <div class="flex items-center justify-between py-2">
+                  <div class="flex items-center justify-between py-1">
                     <span class="price">Rp. 540.000</span>
-                    <a href="#" class="link-information">
+                    <a
+                      href="#"
+                      class="flex items-center bg-accent text-primary border-2 border-accent p-1 rounded-full text-sm hover:bg-primary hover:text-accent hover:border-accent transition duration-300 ease-in-out"
+                    >
                       <ion-icon name="information"></ion-icon>
                     </a>
                   </div>
@@ -201,9 +206,12 @@
                 <img src="img/Outer Parotia.jpg" alt="" />
                 <div class="py-2 px-3">
                   <h1 class="title-product">Out Parotia</h1>
-                  <div class="flex items-center justify-between py-2">
+                  <div class="flex items-center justify-between py-1">
                     <span class="price">Rp. 259.000</span>
-                    <a href="#" class="link-information">
+                    <a
+                      href="#"
+                      class="flex items-center bg-accent text-primary border-2 border-accent p-1 rounded-full text-sm hover:bg-primary hover:text-accent hover:border-accent transition duration-300 ease-in-out"
+                    >
                       <ion-icon name="information"></ion-icon>
                     </a>
                   </div>
@@ -217,9 +225,12 @@
                 <img src="img/Plain Local Luxury.jpg" alt="" />
                 <div class="py-2 px-3">
                   <h1 class="title-product">Plain Local Luxury</h1>
-                  <div class="flex items-center justify-between py-2">
+                  <div class="flex items-center justify-between py-1">
                     <span class="price">Rp. 69.000</span>
-                    <a href="#" class="link-information">
+                    <a
+                      href="#"
+                      class="flex items-center bg-accent text-primary border-2 border-accent p-1 rounded-full text-sm hover:bg-primary hover:text-accent hover:border-accent transition duration-300 ease-in-out"
+                    >
                       <ion-icon name="information"></ion-icon>
                     </a>
                   </div>
@@ -233,9 +244,12 @@
                 <img src="img/Rosho.jpg" alt="" />
                 <div class="py-2 px-3">
                   <h1 class="title-product">Rosho</h1>
-                  <div class="flex items-center justify-between py-2">
+                  <div class="flex items-center justify-between py-1">
                     <span class="price">Rp. 119.000</span>
-                    <a href="#" class="link-information">
+                    <a
+                      href="#"
+                      class="flex items-center bg-accent text-primary border-2 border-accent p-1 rounded-full text-sm hover:bg-primary hover:text-accent hover:border-accent transition duration-300 ease-in-out"
+                    >
                       <ion-icon name="information"></ion-icon>
                     </a>
                   </div>
@@ -243,20 +257,132 @@
               </div>
             </div>
 
-            <!-- Pagination Start -->
-            <div class="flex items-center gap-2 px-4 py-2">
-              <a href="#" class="link-pagination">
-                <ion-icon name="chevron-back-circle-outline"></ion-icon>
-              </a>
-              <a href="#" class="link-pagination active">1</a>
-              <a href="#" class="link-pagination">2</a>
-              <a href="#" class="link-pagination">...</a>
-              <a href="#" class="link-pagination">
-                <ion-icon name="chevron-forward-circle-outline"></ion-icon>
-              </a>
+            <div class="card">
+              <div class="card-product">
+                <img src="img/Outer Parotia.jpg" alt="" />
+                <div class="py-2 px-3">
+                  <h1 class="title-product">Out Parotia</h1>
+                  <div class="flex items-center justify-between py-1">
+                    <span class="price">Rp. 259.000</span>
+                    <a
+                      href="#"
+                      class="flex items-center bg-accent text-primary border-2 border-accent p-1 rounded-full text-sm hover:bg-primary hover:text-accent hover:border-accent transition duration-300 ease-in-out"
+                    >
+                      <ion-icon name="information"></ion-icon>
+                    </a>
+                  </div>
+                </div>
+              </div>
             </div>
-            <!-- Pagination End -->
+
+            <!-- Product Kelima -->
+            <div class="card">
+              <div class="card-product">
+                <img src="img/Plain Local Luxury.jpg" alt="" />
+                <div class="py-2 px-3">
+                  <h1 class="title-product">Plain Local Luxury</h1>
+                  <div class="flex items-center justify-between py-1">
+                    <span class="price">Rp. 69.000</span>
+                    <a
+                      href="#"
+                      class="flex items-center bg-accent text-primary border-2 border-accent p-1 rounded-full text-sm hover:bg-primary hover:text-accent hover:border-accent transition duration-300 ease-in-out"
+                    >
+                      <ion-icon name="information"></ion-icon>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Product Keenam -->
+            <div class="card">
+              <div class="card-product">
+                <img src="img/Rosho.jpg" alt="" />
+                <div class="py-2 px-3">
+                  <h1 class="title-product">Rosho</h1>
+                  <div class="flex items-center justify-between py-1">
+                    <span class="price">Rp. 119.000</span>
+                    <a
+                      href="#"
+                      class="flex items-center bg-accent text-primary border-2 border-accent p-1 rounded-full text-sm hover:bg-primary hover:text-accent hover:border-accent transition duration-300 ease-in-out"
+                    >
+                      <ion-icon name="information"></ion-icon>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-product">
+                <img src="img/Outer Parotia.jpg" alt="" />
+                <div class="py-2 px-3">
+                  <h1 class="title-product">Out Parotia</h1>
+                  <div class="flex items-center justify-between py-1">
+                    <span class="price">Rp. 259.000</span>
+                    <a
+                      href="#"
+                      class="flex items-center bg-accent text-primary border-2 border-accent p-1 rounded-full text-sm hover:bg-primary hover:text-accent hover:border-accent transition duration-300 ease-in-out"
+                    >
+                      <ion-icon name="information"></ion-icon>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Product Kelima -->
+            <div class="card">
+              <div class="card-product">
+                <img src="img/Plain Local Luxury.jpg" alt="" />
+                <div class="py-2 px-3">
+                  <h1 class="title-product">Plain Local Luxury</h1>
+                  <div class="flex items-center justify-between py-1">
+                    <span class="price">Rp. 69.000</span>
+                    <a
+                      href="#"
+                      class="flex items-center bg-accent text-primary border-2 border-accent p-1 rounded-full text-sm hover:bg-primary hover:text-accent hover:border-accent transition duration-300 ease-in-out"
+                    >
+                      <ion-icon name="information"></ion-icon>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Product Keenam -->
+            <div class="card">
+              <div class="card-product">
+                <img src="img/Rosho.jpg" alt="" />
+                <div class="py-2 px-3">
+                  <h1 class="title-product">Rosho</h1>
+                  <div class="flex items-center justify-between py-1">
+                    <span class="price">Rp. 119.000</span>
+                    <a
+                      href="#"
+                      class="flex items-center bg-accent text-primary border-2 border-accent p-1 rounded-full text-sm hover:bg-primary hover:text-accent hover:border-accent transition duration-300 ease-in-out"
+                    >
+                      <ion-icon name="information"></ion-icon>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
+
+          <!-- Pagination Start -->
+          <div class="flex items-center gap-2 px-4 py-2">
+            <a href="#" class="link-pagination">
+              <ion-icon name="chevron-back-circle-outline"></ion-icon>
+            </a>
+            <a href="#" class="link-pagination active">1</a>
+            <a href="#" class="link-pagination">2</a>
+            <a href="#" class="link-pagination">...</a>
+            <a href="#" class="link-pagination">
+              <ion-icon name="chevron-forward-circle-outline"></ion-icon>
+            </a>
+          </div>
+          <!-- Pagination End -->
         </div>
         <!-- Katalog Card End -->
       </div>

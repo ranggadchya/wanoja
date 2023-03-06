@@ -15,7 +15,7 @@ input {
 }
 
 .card {
-  @apply w-1/2 md:w-1/3 px-4 py-3;
+  @apply w-1/2 md:w-1/5 px-4 py-3;
 }
 
 /* Home Start */
@@ -80,7 +80,7 @@ input {
 
 /* Mitra Start */
 .form-control {
-  @apply flex w-full border-2 rounded-md text-xs bg-secondary py-2 px-4 focus:caret-primary/70 text-primary/70 placeholder:text-primary/50 focus:bg-accent transition duration-300 ease-in-out;
+  @apply flex w-full lg:w-1/4 border-2 rounded-md text-xs lg:text-sm bg-secondary py-2 px-4 focus:caret-primary/70 text-primary/70 placeholder:text-primary/50 focus:bg-accent transition duration-300 ease-in-out;
 }
 
 .card-mitra {
@@ -100,11 +100,15 @@ input {
 }
 
 .link-pagination {
-  @apply text-base text-secondary flex items-center;
+  @apply text-base lg:text-base text-secondary flex items-center hover:text-accent transition duration-300 ease-in-out;
 }
 
 .link-pagination.active {
   @apply text-base text-accent flex items-center;
+}
+
+.link-pagination ion-icon {
+  @apply text-base lg:text-lg;
 }
 
 /* Mitra End */
@@ -115,7 +119,7 @@ input {
 }
 
 .title-product {
-  @apply font-semibold uppercase text-secondary text-sm;
+  @apply font-semibold uppercase text-secondary text-sm lg:text-base;
 }
 
 .star {
@@ -123,11 +127,11 @@ input {
 }
 
 .price {
-  @apply flex text-secondary text-sm;
+  @apply flex text-secondary text-sm lg:text-base;
 }
 
 .link-information {
-  @apply flex items-center bg-accent text-primary border border-primary p-1 rounded-full text-sm hover:bg-primary hover:text-accent hover:border-accent transition duration-300 ease-in-out;
+  @apply flex items-center bg-accent text-primary border-2 border-accent p-1 rounded-full text-sm hover:bg-primary hover:text-accent hover:border-accent transition duration-300 ease-in-out;
 }
 
 /* Katalog End */
