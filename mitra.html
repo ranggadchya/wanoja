@@ -13,93 +13,52 @@
   <body>
     <!-- Header Start -->
     <header
-      class="absolute top-0 left-0 z-10 flex flex-col flex-wrap w-full items-center bg-transparent lg:px-24"
+      class="flex flex-col lg:flex-row w-full items-center bg-primary transition-all"
     >
-      <div class="container py-3">
-        <div class="relative flex items-center justify-between">
-          <div class="w-32">
-            <img src="img/logo.png" alt="" />
-          </div>
-
-          <!-- Hamburger Start -->
-          <div class="flex items-center justify-center">
-            <button
-              id="hamburger"
-              name="hamburger"
-              type="button"
-              class="absolute flex lg:hidden flex-col right-4 px-3 py-2 justify-end rounded-md overflow-hidden shadow-md"
-            >
-              <span class="hamburger origin-top-right"></span>
-              <span class="hamburger"></span>
-              <span class="hamburger"></span>
-            </button>
-          </div>
-          <!-- Hamburger End -->
-
-          <!-- Navbar Desktop Start -->
-          <nav class="bg-transparent hidden lg:flex">
-            <div class="container">
-              <ul class="flex gap-5">
-                <li>
-                  <a href="index.html" class="nav-link-desktop">
-                    <span>Home</span>
-                  </a>
-                </li>
-                <li>
-                  <a href="mitra.html" class="nav-link-desktop">
-                    <span>Mitra</span>
-                  </a>
-                </li>
-                <li>
-                  <a href="katalog.html" class="nav-link-desktop">
-                    <span>Katalog</span>
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="login.html"
-                    class="text-primary/70 font-semibold px-4 py-2 bg-secondary border-2 border-secondary rounded-md hover:bg-transparent hover:text-secondary transition duration-300 ease-in-out"
-                  >
-                    Login
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </nav>
-          <!-- Navbar Desktop End -->
-        </div>
-      </div>
-
-      <!-- Navbar Mobile Start -->
       <nav
-        class="bg-secondary h-full w-full hidden transition-all duration-300 ease-in-out shadow-md"
-        id="nav-menu"
+        class="container px-4 flex flex-wrap lg:flex-nowrap items-center justify-between py-3 lg:px-24"
       >
-        <div class="container">
-          <ul class="block py-3 lg:flex">
-            <li class="group">
-              <a href="index.html" class="nav-link active">Home</a>
-            </li>
-            <li class="group">
-              <a href="mitra.html" class="nav-link">Mitra</a>
-            </li>
-            <li class="group">
-              <a href="katalog.html" class="nav-link">Katalog</a>
-            </li>
-            <li class="block lg:hidden">
-              <div class="flex flex-col py-2 px-3">
-                <span
-                  class="flex justify-center h-[2px] bg-accent rounded-full"
-                ></span>
-              </div>
-            </li>
-            <li class="group">
-              <a href="login.html" class="nav-link-user active">Login</a>
-            </li>
+        <div class="px-4">
+          <img src="img/logo.png" alt="WNJ Logo" width="128" height="72" />
+        </div>
+
+        <!-- Toggle Hamburger Start -->
+        <div class="flex items-center lg:hidden">
+          <button
+            class="flex items-center justify-center flex-col bg-primary/20 backdrop-blur-sm shadow w-8 py-2 px-2 gap-0.5 rounded"
+            type="button"
+            id="hamburger"
+          >
+            <span
+              class="h-0.5 w-4 bg-accent rounded-full origin-center transition-all duration-300 ease-in-out"
+            ></span>
+            <span
+              class="h-0.5 w-4 bg-accent rounded-full origin-bottom-left transition-all duration-300 ease-in-out"
+            ></span>
+            <span
+              class="h-0.5 w-4 bg-accent rounded-full origin-center transition-all duration-300 ease-in-out"
+            ></span>
+          </button>
+        </div>
+        <!-- Toggle Hamburger End -->
+
+        <!-- Navbar Start -->
+        <div
+          class="hidden px-4 transition-all duration-300 ease-in w-full"
+          id="nav-menu"
+        >
+          <ul
+            class="flex flex-col lg:flex-row lg:items-center gap-2 w-full justify-end transition-all duration-300 ease-in-out"
+          >
+            <li><a href="index.html" class="nav-link active">Home</a></li>
+            <li><a href="mitra.html" class="nav-link">Mitra</a></li>
+            <li><a href="katalog.html" class="nav-link">Katalog</a></li>
+            <hr class="lg:hidden flex justify-center mx-4" />
+            <li><a href="login.html" class="nav-link">Login</a></li>
           </ul>
         </div>
+        <!-- Navbar End -->
       </nav>
-      <!-- Navbar Mobile End -->
     </header>
     <!-- Header End -->
 
