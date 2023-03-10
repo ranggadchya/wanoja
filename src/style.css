@@ -586,6 +586,10 @@ video {
   margin-top: 1.25rem;
 }
 
+.mr-9 {
+  margin-right: 2.25rem;
+}
+
 .flex {
   display: flex;
 }
@@ -835,6 +839,16 @@ video {
 .py-8 {
   padding-top: 2rem;
   padding-bottom: 2rem;
+}
+
+.px-8 {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.px-10 {
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
 }
 
 .pb-2 {
