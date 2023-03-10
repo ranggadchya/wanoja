@@ -606,6 +606,10 @@ video {
   height: 0.125rem;
 }
 
+.h-80 {
+  height: 20rem;
+}
+
 .h-full {
   height: 100%;
 }
@@ -620,6 +624,10 @@ video {
 
 .w-4\/6 {
   width: 66.666667%;
+}
+
+.w-60 {
+  width: 15rem;
 }
 
 .w-8 {
@@ -728,6 +736,10 @@ video {
 
 .rounded-md {
   border-radius: 0.375rem;
+}
+
+.rounded-xl {
+  border-radius: 0.75rem;
 }
 
 .border-2 {
@@ -1477,26 +1489,6 @@ input {
 }
 
 /* Katalog End */
-
-/* Detail Katalog Start */
-
-.swiper {
-  height: 20rem;
-  width: 15rem;
-}
-
-.swiper-slide {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 0.75rem;
-}
-
-.swiper-slide img {
-  border-radius: 0.75rem;
-}
-
-/* Detail Katalog End */
 
 /* Desktop Start */
 
