@@ -12,26 +12,23 @@
   </head>
   <body>
     <div class="container h-screen flex flex-col items-center justify-center">
-      <div class="absolute -z-50 w-full h-1/2 bg-secondary top-0"></div>
-      <a
-        href="index.html"
-        class="mb-6 p-2 flex items-center justify-center text-primary hover:lg:bg-primary hover:lg:text-secondary rounded-full transition duration-300 ease-in-out"
-      >
-        <ion-icon name="home-outline" class="text-xl"></ion-icon>
+      <div class="absolute -z-50 w-full h-1/2 bg-secondary bottom-0"></div>
+      <a href="index.html" class="mb-6 p-2 flex items-center justify-center">
+        <img src="img/logo.png" alt="" />
       </a>
       <div
-        class="flex flex-col items-center justify-center max-w-sm bg-primary/20 backdrop-blur-sm shadow-md py-8 px-12 rounded-lg"
+        class="flex flex-col items-center justify-center w-80 max-w-sm bg-primary/20 backdrop-blur-sm shadow-md py-8 px-12 rounded-lg"
       >
-        <h1 class="text-xl uppercase font-semibold text-primary">login</h1>
-        <div class="flex flex-col gap-2 w-full my-4">
+        <h1 class="text-xl uppercase font-bold text-secondary">login</h1>
+        <form action="" class="flex flex-col gap-2 w-full my-4">
           <!-- Email Start -->
           <div class="w-full">
             <input
               type="text"
-              class="w-full bg-primary/0 border-b-2 border-secondary text-sm py-2 text-primary placeholder:font-semibold placeholder:italic after:border-primary focus:border-primary transition duration-200 ease-in"
+              class="w-full bg-primary/0 border-b-2 border-secondary text-sm py-2 text-primary placeholder:font-semibold placeholder:italic transition duration-200 ease-in"
               placeholder="Username / Email"
+              required
             />
-            <label for="" class="text-xs text-red-500">* Email Required</label>
           </div>
           <!-- Email End -->
 
@@ -39,40 +36,39 @@
           <div class="w-full">
             <input
               type="text"
-              class="w-full bg-primary/0 border-b-2 border-secondary text-sm py-2 placeholder:font-semibold placeholder:italic transition duration-300 ease-in-out"
+              class="w-full bg-primary/0 border-b-2 border-secondary text-primary text-sm py-2 placeholder:font-semibold placeholder:italic transition duration-300 ease-in-out"
               placeholder="Password"
             />
-            <label for="" class="text-xs text-red-500">
-              * Minimum 8 Characters
-            </label>
           </div>
           <!-- Password End -->
 
           <!-- Login | Forgot Password Start -->
-          <div class="flex items-center justify-between mt-1.5">
+          <div class="flex items-center justify-between mt-3 gap-12">
             <button
-              class="px-3 py-1 text-xs bg-secondary border-2 border-secondary text-primary font-semibold uppercase rounded-sm hover:bg-primary hover:text-secondary transition duration-300 ease-in-out"
+              class="px-3 py-1 text-xs bg-secondary border-2 border-secondary text-primary font-semibold uppercase rounded-sm hover:bg-transparent hover:text-secondary transition duration-300 ease-in-out"
             >
               Login
             </button>
             <a
               href="#"
-              class="text-sm text-accent hover:text-secondary transition duration-300 ease-in-out"
+              class="text-sm text-primary hover:text-primary/20 transition duration-300 ease-in-out"
             >
               Forgot Password
             </a>
           </div>
           <!-- Login | Forgot Password End -->
+        </form>
 
-          <span class="flex items-center text-secondary text-xs mt-0.5 gap-1">
-            Don't have account ?
-            <a
-              href="#"
-              class="text-accent hover:text-secondary transition duration-300 ease-in-out"
-              >Register</a
-            >
-          </span>
-        </div>
+        <span
+          class="flex items-center w-full text-primary/50 text-xs mt-0.5 gap-1"
+        >
+          Don't have account ?
+          <a
+            href="#"
+            class="text-primary hover:text-primary/20 transition duration-300 ease-in-out"
+            >Register</a
+          >
+        </span>
       </div>
     </div>
 
