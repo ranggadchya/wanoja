@@ -13,6 +13,10 @@ input {
   border-radius: none;
 }
 
+textarea {
+  outline: none;
+}
+
 .card {
   @apply w-1/2 md:w-1/5 px-4 py-3;
 }
